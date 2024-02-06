@@ -1,46 +1,87 @@
-import React from 'react'
-import PageLayout from './PageLayout'
+import React from "react";
+import PageLayout from "./PageLayout";
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
-import Link from 'next/link'
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Link from "next/link";
+import Image from "next/image";
+import { montserrat } from "@/fonts/font";
+import { Github, LucideView } from "lucide-react";
+import { project_data } from "@/data/project";
 export default function Project() {
-    return (
-        <PageLayout scrollDownTo='experience' scrollUpTo='home'>
-            <main className=' flex flex-col h-full '>
-                <section className='flex flex-col gap-3 items-center'>
-                    <p className='text-4xl '>Project</p>
-                </section>
-                <section className='flex justify-center h-full items-center'>
-                    <Carousel className='w-[95%] md:w-[70%]'>
-                        <CarouselContent >
-                            {Array.from({ length: 5 }).map((_, index) => (
-                                <CarouselItem key={index} className="md:basis-1/2 ">
-                                    <div className='border-2 rounded-md flex flex-col h-[500px] px-3 '>
-                                        <div className='h-[300px] rounded-lg mx-auto my-3 w-[95%] bg-red-300'></div>
-                                        <div className='flex flex-col gap-4 my-3 w-[95%] mx-auto'>
-                                            <p className='text-center'>project name</p>
-                                            <p className='text-gray-500 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt velit ex tempore magni necessitatibus ipsam esse officia laborum? Assumenda error laudantium consequuntur qui provident officia laborum excepturi hic facere.</p>
-
-                                            <div className='flex justify-between px-5 items-center gap-5 pb-5'>
-                                                <Link href={""} className='bg-black text-center w-[150px] py-3 text-white text-xl hover:bg-slate-800 rounded-lg'>Github</Link>
-                                                <Link href={"https://recipesboxx.netlify.app/"} className='text-center bg-slate-50 border-black border-2 hover:bg-slate-200 w-[150px] py-3   text-xl rounded-lg'>Visit Live</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
-                    </Carousel>
-
-                </section>
-            </main>
-        </PageLayout>
-    )
+  return (
+    <PageLayout scrollDownTo="experience" scrollUpTo="home">
+      <main className=" flex flex-col h-full ">
+        <section className="flex flex-col  items-center pt-3">
+          <p className=" text-sm lg:text-lg text-gray-600">Explore My</p>
+          <p className="text-4xl sm:text-5xl lg:text-6xl ">Projects</p>
+        </section>
+        <section className="flex gap-3 flex-col justify-center -mt-8 h-full items-center">
+          <p className="text-sm  text-gray-500 text-center">
+            &#x2015;&#x2015; scroll &#x2015;&#x2015;
+          </p>
+          <Carousel className="w-[95%] md:w-[70%]">
+            <CarouselContent>
+              {project_data.map((item, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 ">
+                  <div className="rounded-lg group  flex flex-col h-[500px] px-3 shadow-xl  bg-gray-100 ">
+                    <div className="h-[250px] cursor-pointer group rounded-md relative mx-auto my-3 w-[95%] overflow-hidden ">
+                      <Image
+                        src={`/projects/${item.image}.png`}
+                        fill
+                        alt=""
+                        className="object-cover  group-hover:hidden "
+                      />
+                      <Image
+                        src={`/projects/${item.image}2.png`}
+                        fill
+                        alt=""
+                        className="object-cover hidden group-hover:block"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-3 my-3 w-[95%] mx-auto">
+                      <p className={`text-gray-500 text-sm`}>
+                        {" "}
+                        &#x2015; &#160; {index + 1}.{item.type}
+                      </p>
+                      <p className={`${montserrat.className} text-2xl`}>
+                        {item.title}
+                      </p>
+                      <p className="text-gray-500 h-[80px] overflow-auto text-sm">
+                        {item.about}
+                      </p>
+                      <div className="flex  items-center gap-4">
+                        <Link
+                          href={item.githubUrl}
+                          className="flex text-gray-500 hover:text-black hover:underline transition-all"
+                        >
+                          <Github />
+                          <span>Github</span>
+                        </Link>
+                        <Link
+                          href={item.websiteUrl}
+                          className="flex text-gray-500 hover:text-black hover:underline transition-all group-hover:animate-bounce"
+                        >
+                          <LucideView />
+                          <span>Vist Live</span>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="hidden md:block">
+              <CarouselPrevious />
+              <CarouselNext />
+            </div>
+          </Carousel>
+        </section>
+      </main>
+    </PageLayout>
+  );
 }
