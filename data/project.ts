@@ -1,14 +1,5 @@
 export const project_data = [
   {
-    title: "Wallet Watcher",
-    type: " finance management website (full stack)",
-    image: "wallet-watcher",
-    githubUrl: "https://github.com/lyyhourr/wallet-watcher",
-    websiteUrl: "https://wallets-watcher.vercel.app/",
-    about:
-      "Create an account to manage your expenses and income seamlessly. Track your spending and earnings, and easily query by date or sort to see where your money goes!",
-  },
-  {
     title: "Recipe Box",
     type: " recipe website",
     image: "recipe-box",
@@ -16,6 +7,15 @@ export const project_data = [
     websiteUrl: "https://recipesboxx.netlify.app/",
     about:
       "Easily search by ingredients, cuisine, and meal type.Get step-by-step instructions and nutritional info. Cooking made easy, anytime, anywhere.",
+  },
+  {
+    title: "Wallet Watcher",
+    type: " finance management website (full stack)",
+    image: "wallet-watcher",
+    githubUrl: "https://github.com/lyyhourr/wallet-watcher",
+    websiteUrl: "https://wallets-watcher.vercel.app/",
+    about:
+      "Create an account to manage your expenses and income seamlessly. Track your spending and earnings, and easily query by date or sort to see where your money goes!",
   },
   {
     title: "Pophorn",
