@@ -1,9 +1,5 @@
+"use client"
 import {
-  imbPlexSans,
-  montserrat,
-  playfairDisplay,
-  poppins,
-  prozaLibre,
   spaceGrotesk,
 } from "@/fonts/font";
 import Image from "next/image";
@@ -30,7 +26,6 @@ export default function HomePage() {
       {text}
     </span>
   );
-
   return (
     <div className="w-full h-screen flex flex-col  px-5 xl:px-32">
       <Navbar />
@@ -53,7 +48,7 @@ export default function HomePage() {
               <p
                 className={`font-extralight  text-2xl sm:text-3xl lg:text-5xl`}
               >
-                Hello I'm
+                Hello I&apos;m
               </p>{" "}
               <p className={`font-extrabold  text-4xl sm:text-5xl lg:text-7xl`}>
                 Full Name,
