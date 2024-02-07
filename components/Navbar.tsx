@@ -3,7 +3,7 @@ import { imbPlexSans, prozaLibre } from "@/fonts/font";
 import { Download, Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
-const routes = ["about", "experience", "project", "contact"];
+const routes = ["project", "experience", "about", "contact"];
 export const scrollToSection = (id: string) => {
   const section = document.getElementById(id);
   if (section) {
@@ -35,9 +35,8 @@ export default function Navbar() {
       </div>
       <div className="flex flex-col justify-center items-center gap-10 ">
         <button
-          className={` text-lg uppercase hover:text-xl hover:underline transition-all ${
-            "home" === onPage && "underline text-3xl"
-          }`}
+          className={` text-lg uppercase hover:text-xl hover:underline transition-all ${"home" === onPage && "underline text-3xl"
+            }`}
           onClick={() => {
             scrollToSection("home"), setOpenMenu(false);
           }}
@@ -47,9 +46,8 @@ export default function Navbar() {
         {routes.map((item) => (
           <button
             key={item}
-            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${
-              item === onPage && "underline text-3xl"
-            }`}
+            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${item === onPage && "underline text-3xl"
+              }`}
             onClick={() => {
               scrollToSection(item), setOpenMenu(false);
             }}
@@ -76,9 +74,8 @@ export default function Navbar() {
         {routes.map((item) => (
           <button
             key={item}
-            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${
-              item === onPage && "underline text-3xl"
-            }`}
+            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${item === onPage && "underline text-3xl"
+              }`}
             onClick={() => {
               scrollToSection(item), setOnPage(item);
             }}

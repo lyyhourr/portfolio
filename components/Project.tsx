@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PageLayout from "./PageLayout";
 import {
   Carousel,
@@ -13,11 +13,13 @@ import { montserrat } from "@/fonts/font";
 import { Github, LucideView } from "lucide-react";
 import { project_data } from "@/data/project";
 export default function Project() {
+
+
   return (
-    <PageLayout scrollDownTo="experience" scrollUpTo="home">
+    <PageLayout scrollDownTo="experience" scrollUpTo="home" className="bg-gray-100">
       <main className=" flex flex-col h-full ">
         <section className="flex flex-col  items-center pt-3">
-          <p className=" text-sm lg:text-lg text-gray-600">Explore My</p>
+          <p className=" text-sm lg:text-lg text-gray-600">Browse My Recent</p>
           <p className="text-4xl sm:text-5xl lg:text-6xl ">Projects</p>
         </section>
         <section className="flex gap-3 flex-col justify-center -mt-8 h-full items-center">
@@ -28,18 +30,20 @@ export default function Project() {
             <CarouselContent>
               {project_data.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 ">
-                  <div className="rounded-lg group  flex flex-col h-[500px] px-3 shadow-xl  bg-gray-100 ">
-                    <div className="h-[250px] cursor-pointer group rounded-md relative mx-auto my-3 w-[95%] overflow-hidden ">
+                  <div className="rounded-lg group  flex flex-col h-[500px]   bg-white ">
+                    <div className="  h-[350px]  cursor-pointer group2 rounded-t-md relative   w-full overflow-hidden ">
                       <Image
                         src={`/projects/${item.image}.png`}
                         fill
                         alt=""
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover  group-hover:hidden "
                       />
                       <Image
                         src={`/projects/${item.image}2.png`}
                         fill
                         alt=""
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover hidden group-hover:block"
                       />
                     </div>
@@ -83,5 +87,6 @@ export default function Project() {
         </section>
       </main>
     </PageLayout>
+
   );
 }

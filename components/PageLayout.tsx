@@ -9,10 +9,11 @@ interface PageLayout {
     scrollUpTo: string
     scrollDownTo: string
     disableScrollDown?: boolean
+    className?: string
 }
-export default function PageLayout({ children, scrollDownTo, scrollUpTo, disableScrollDown }: PageLayout) {
+export default function PageLayout({ children, scrollDownTo, scrollUpTo, disableScrollDown, className }: PageLayout) {
     return (
-        <div className='w-screen h-screen flex flex-col relative'>
+        <div className={`w-screen h-screen flex flex-col relative ${className} `}>
             <div className='absolute top-3 right-2 lg:top-6 lg:right-5'>
                 <button onClick={() => scrollToSection(scrollUpTo)}>
                     <Image
