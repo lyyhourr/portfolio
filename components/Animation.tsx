@@ -16,7 +16,7 @@ export default function Animation({ children, id }: Section) {
         setSecondInView(inView);
     };
     return (
-        <section id={id} className='snap-start'>
+        <section id={id} className='snap-start w-screen overflow-hidden'>
             <InViewWatcher onInViewChange={handleSecondInView}>
                 {(inView: boolean) => (
                     <View inView={inView} >

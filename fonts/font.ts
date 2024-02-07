@@ -17,7 +17,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["500"] });
 const imbPlexSans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["500"] });
 const prozaLibre = Proza_Libre({ subsets: ["latin"], weight: ["500"] });
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["500"] });
-const playfairDisplay = Lato({
+const lato = Lato({
   subsets: ["latin"],
   weight: ["700"],
 });
@@ -29,5 +29,5 @@ export {
   prozaLibre,
   imbPlexSans,
   montserrat,
-  playfairDisplay,
+  lato,
 };

@@ -46,7 +46,7 @@ export default function HomePage() {
               className={`flex flex-wrap items-end justify-center lg:gap-x-3  gap-x-1 uppercase lg:text-center font-extrabold ${spaceGrotesk.className}`}
             >
               <p
-                className={`font-extralight  text-2xl sm:text-3xl lg:text-5xl`}
+                className={`font-extralight  text-2xl sm:text-3xl lg:text-5xl text-gray-500`}
               >
                 Hello I&apos;m
               </p>{" "}
