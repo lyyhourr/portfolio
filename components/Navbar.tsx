@@ -17,17 +17,20 @@ export default function Navbar() {
 
   const ResumeButton = () => {
     const handleDownload = () => {
-      const fileUrl = "/cv.pdf";
+      const fileUrl = "/cv/cv_mamlyhua.pdf";
 
       const link = document.createElement("a");
       link.href = fileUrl;
-      link.setAttribute("download", "resume.pdf");
+      link.setAttribute("download", "mamlyhua-CV.pdf");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     };
     return (
-      <button className="bg-black rounded-md text-lg px-3 py-2 sm:px-5 sm:py-2 text-white flex items-center gap-1  transition-all hover:bg-slate-900">
+      <button
+        className="bg-black rounded-md text-lg px-3 py-2 sm:px-5 sm:py-2 text-white flex items-center gap-1  transition-all hover:bg-slate-900"
+        onClick={handleDownload}
+      >
         <Download />
         Resume
       </button>
