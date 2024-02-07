@@ -1,7 +1,7 @@
 export const project_data = [
   {
     title: "Wallet Watcher",
-    type: " finance management website",
+    type: " finance management website (full stack)",
     image: "wallet-watcher",
     githubUrl: "https://github.com/lyyhourr/wallet-watcher",
     websiteUrl: "https://wallets-watcher.vercel.app/",
