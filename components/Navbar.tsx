@@ -16,6 +16,16 @@ export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
 
   const ResumeButton = () => {
+    const handleDownload = () => {
+      const fileUrl = "/cv.pdf";
+
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.setAttribute("download", "resume.pdf");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
     return (
       <button className="bg-black rounded-md text-lg px-3 py-2 sm:px-5 sm:py-2 text-white flex items-center gap-1  transition-all hover:bg-slate-900">
         <Download />
@@ -35,8 +45,9 @@ export default function Navbar() {
       </div>
       <div className="flex flex-col justify-center items-center gap-10 ">
         <button
-          className={` text-lg uppercase hover:text-xl hover:underline transition-all ${"home" === onPage && "underline text-3xl"
-            }`}
+          className={` text-lg uppercase hover:text-xl hover:underline transition-all ${
+            "home" === onPage && "underline text-3xl"
+          }`}
           onClick={() => {
             scrollToSection("home"), setOpenMenu(false);
           }}
@@ -46,8 +57,9 @@ export default function Navbar() {
         {routes.map((item) => (
           <button
             key={item}
-            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${item === onPage && "underline text-3xl"
-              }`}
+            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${
+              item === onPage && "underline text-3xl"
+            }`}
             onClick={() => {
               scrollToSection(item), setOpenMenu(false);
             }}
@@ -74,8 +86,9 @@ export default function Navbar() {
         {routes.map((item) => (
           <button
             key={item}
-            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${item === onPage && "underline text-3xl"
-              }`}
+            className={` text-lg uppercase hover:text-xl hover:underline transition-all ${
+              item === onPage && "underline text-3xl"
+            }`}
             onClick={() => {
               scrollToSection(item), setOnPage(item);
             }}

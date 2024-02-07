@@ -1,17 +1,21 @@
 import React from "react";
 import PageLayout from "./PageLayout";
 import Image from "next/image";
+import { aboutme, education } from "@/data/about";
 
 export default function About() {
-
-  const EducationText = ({ schoolName, date }: { date: string, schoolName: string }) => (
+  const EducationText = ({
+    schoolName,
+    date,
+  }: {
+    date: string;
+    schoolName: string;
+  }) => (
     <div className="max-w-3xl flex items-center gap-1 text-sm md:text-base lg:text-lg">
-      <p>
-        -{schoolName}
-      </p>
+      <p>-{schoolName}</p>
       <p className="text-xs md:text-base  text-gray-500">({date})</p>
     </div>
-  )
+  );
   return (
     <PageLayout scrollDownTo="contact" scrollUpTo="experience">
       <main className=" flex flex-col  lg:gap-10 px-10 py-5 lg:py-20 h-full">
@@ -28,24 +32,24 @@ export default function About() {
                 width={400}
                 height={400}
                 alt="about me img"
-
               />
             </div>
             <div className="w-full flex items-center flex-col justify-between h-full gap-1 lg:gap-8 text-lg">
               <div className="h-full w-full flex flex-col gap-3">
-                <p className="text-start text-2xl">Education:  </p>
-                <EducationText date="Current" schoolName="Setect Insitute" />
-                <EducationText date="Current" schoolName="ACE" />
-                <EducationText date="completed 2023" schoolName="KIT python course" />
-                <EducationText date="graduted 2020" schoolName="Highschool" />
+                <p className="text-start text-2xl">Education: </p>
+                {education.map((item) => (
+                  <EducationText
+                    date={item.date}
+                    schoolName={item.school}
+                    key={item.school}
+                  />
+                ))}
               </div>
               <div className="w-full h-2 bg-black my-3"></div>
               <div className="h-full w-full">
-                <p>Personal:  </p>
+                <p>Personal: </p>
                 <p className="max-w-3xl text-justify text-sm sm:text-base ">
-                  Lorem ipsum dolor sitmet consectetur adipisicing elit.
-                  Perferendis fugiat aut facilis optio aliquam itaque quos
-
+                  {aboutme}
                 </p>
               </div>
             </div>

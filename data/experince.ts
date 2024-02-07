@@ -40,3 +40,10 @@ export const techs = [
     img: "python",
   },
 ];
+export const WorkExperience = [
+  {
+    job: "Internship",
+    duration: "6 Months",
+    detail: "learning and assisted senior dev with web frontend works.",
+  },
+];

@@ -1,7 +1,5 @@
-"use client"
-import {
-  spaceGrotesk,
-} from "@/fonts/font";
+"use client";
+import { spaceGrotesk } from "@/fonts/font";
 import Image from "next/image";
 import React from "react";
 import Navbar, { scrollToSection } from "./Navbar";
@@ -51,7 +49,7 @@ export default function HomePage() {
                 Hello I&apos;m
               </p>{" "}
               <p className={`font-extrabold  text-4xl sm:text-5xl lg:text-7xl`}>
-                Full Name,
+                Mam Lyhua,
               </p>
             </div>
           </div>
