@@ -46,7 +46,7 @@ export default function Experience() {
       <main className=" flex flex-col h-full xl:justify-center  lg:items-center gap-3 lg:gap-10 py-2">
         <section className="text-center">
           <p className="text-lg text-gray-600">Explore My</p>
-          <p className="text-4xl ">Experiences</p>
+          <p className="text-4xl lg:text-6xl ">Experiences</p>
         </section>
         <section className="flex flex-col xl:flex-row w-full px-3 sm:px-16 md:px-24 xl:px-16 gap-4 lg:gap-10 ">
           <Card title="Tech Used">

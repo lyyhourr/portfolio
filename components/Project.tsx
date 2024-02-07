@@ -13,10 +13,12 @@ import { montserrat } from "@/fonts/font";
 import { Github, LucideView } from "lucide-react";
 import { project_data } from "@/data/project";
 export default function Project() {
-
-
   return (
-    <PageLayout scrollDownTo="experience" scrollUpTo="home" className="bg-gray-100">
+    <PageLayout
+      scrollDownTo="experience"
+      scrollUpTo="home"
+      className="bg-gray-100"
+    >
       <main className=" flex flex-col h-full ">
         <section className="flex flex-col  items-center pt-3">
           <p className=" text-sm lg:text-lg text-gray-600">Browse My Recent</p>
@@ -24,7 +26,7 @@ export default function Project() {
         </section>
         <section className="flex gap-3 flex-col justify-center -mt-8 h-full items-center">
           <p className="text-sm  text-gray-500 text-center">
-            &#x2015;&#x2015; scroll &#x2015;&#x2015;
+            &#x2015;&#x2015; swipe to see more &#x2015;&#x2015;
           </p>
           <Carousel className="w-[95%] md:w-[70%]">
             <CarouselContent>
@@ -36,14 +38,14 @@ export default function Project() {
                         src={`/projects/${item.image}.png`}
                         fill
                         alt=""
-                        // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover  group-hover:hidden "
                       />
                       <Image
                         src={`/projects/${item.image}2.png`}
                         fill
                         alt=""
-                        // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover hidden group-hover:block"
                       />
                     </div>
@@ -87,6 +89,5 @@ export default function Project() {
         </section>
       </main>
     </PageLayout>
-
   );
 }
