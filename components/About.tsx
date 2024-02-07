@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function About() {
 
   const EducationText = ({ schoolName, date }: { date: string, schoolName: string }) => (
-    <div className="max-w-3xl flex items-center gap-1 text-justify  lg:text-lg">
+    <div className="max-w-3xl flex items-center gap-1 text-sm md:text-base lg:text-lg">
       <p>
         -{schoolName}
       </p>
@@ -19,7 +19,7 @@ export default function About() {
           <p className=" text-sm lg:text-lg text-gray-600">Get To Know More</p>
           <p className="text-4xl sm:text-5xl lg:text-6xl ">About Me</p>
         </section>
-        <section className="flex flex-col  lg:mt-0 lg:flex-row justify-center -mt-20   h-full items-center">
+        <section className="flex flex-col  lg:mt-0 lg:flex-row justify-center    h-full items-center">
           <div className="flex flex-col lg:flex-row  gap-6">
             <div className="mx-auto lg:mx-0 w-2/3 flex justify-center  lg:justify-end items-center  ">
               <Image
@@ -36,7 +36,7 @@ export default function About() {
                 <p className="text-start text-2xl">Education:  </p>
                 <EducationText date="Current" schoolName="Setect Insitute" />
                 <EducationText date="Current" schoolName="ACE" />
-                <EducationText date="completed 2023" schoolName="KIT python course " />
+                <EducationText date="completed 2023" schoolName="KIT python course" />
                 <EducationText date="graduted 2020" schoolName="Highschool" />
               </div>
               <div className="w-full h-2 bg-black my-3"></div>

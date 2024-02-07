@@ -36,14 +36,14 @@ export default function Project() {
                         src={`/projects/${item.image}.png`}
                         fill
                         alt=""
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover  group-hover:hidden "
                       />
                       <Image
                         src={`/projects/${item.image}2.png`}
                         fill
                         alt=""
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover hidden group-hover:block"
                       />
                     </div>

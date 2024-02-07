@@ -3,7 +3,7 @@ import { imbPlexSans, prozaLibre } from "@/fonts/font";
 import { Download, Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
-const routes = ["project", "experience", "about", "contact"];
+export const routes = ["project", "experience", "about", "contact"];
 export const scrollToSection = (id: string) => {
   const section = document.getElementById(id);
   if (section) {

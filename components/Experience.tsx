@@ -48,7 +48,7 @@ export default function Experience() {
                       width={35}
                       height={35}
                       alt=""
-                      className="rounded-md"
+                      className="rounded-md "
                     />
                     <p className="first-letter:uppercase ">{item.name}</p>
                   </div>
