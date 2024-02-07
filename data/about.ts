@@ -18,4 +18,4 @@ export const education = [
 ];
 
 export const aboutme =
-  "Hey, I'm Lyhua, a third-year student who loves coding and learning new things. I'm always eager to learn and enjoy turning concepts into reality with code. Let's explore together and create something amazing!";
+  "Hey, I'm Lyhua, a third-year student who loves coding and learning new things. I'm always eager to learn and enjoy turning concepts into reality with code !!";

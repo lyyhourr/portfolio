@@ -73,7 +73,7 @@ export default function Project() {
                           className="flex text-gray-500 hover:text-black hover:underline transition-all group-hover:animate-bounce"
                         >
                           <LucideView />
-                          <span>Vist Live</span>
+                          <span>Live Website</span>
                         </Link>
                       </div>
                     </div>
