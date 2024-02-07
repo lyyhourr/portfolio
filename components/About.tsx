@@ -32,6 +32,7 @@ export default function About() {
                 width={400}
                 height={400}
                 alt="about me img"
+                className="w-full h-full"
               />
             </div>
             <div className="w-full flex items-center flex-col justify-between h-full gap-1 lg:gap-8 text-lg">

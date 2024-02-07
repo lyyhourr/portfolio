@@ -22,8 +22,8 @@ export default function Contact() {
                 href={item.href}
                 key={item.text}
                 className={`flex items-center  ${
-                  item.img === "fb2" && "hover:underline"
-                } ${item.img === "tele" && "hover:underline"}`}
+                  item.img === "fb2" && "underline"
+                } ${item.img === "tele" && "underline"}`}
               >
                 <Image
                   src={`/contact/${item.img}.png`}

@@ -48,13 +48,13 @@ export default function Experience() {
           <p className="text-lg text-gray-600">Explore My</p>
           <p className="text-4xl lg:text-6xl ">Experiences</p>
         </section>
-        <section className="flex flex-col xl:flex-row w-full px-3 sm:px-16 md:px-24 xl:px-16 gap-4 lg:gap-10 ">
+        <section className="flex flex-col lg:flex-row w-full px-3 sm:px-16 md:px-24 xl:px-16 gap-4 lg:gap-10 ">
           <Card title="Tech Used">
-            <div className="grid grid-cols-2   gap-5">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2  gap-5">
               {techs.map((item) => (
                 <div
                   key={item.img}
-                  className="flex ml-[30px] md:ml-[80px] xl:ml-[100px] items-center   gap-2"
+                  className="flex ml-[30px] lg:ml-[50px] xl:ml-[100px] items-center   gap-2"
                 >
                   <Image
                     key={item.img}
@@ -62,7 +62,7 @@ export default function Experience() {
                     width={35}
                     height={35}
                     alt=""
-                    className="rounded-md "
+                    className="rounded-md w-[35px] h-[35px] "
                   />
                   <p className="first-letter:uppercase ">{item.name}</p>
                 </div>
