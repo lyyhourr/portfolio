@@ -11,8 +11,8 @@ export default function Contact() {
 
   return (
     <PageLayout scrollDownTo="home" scrollUpTo="about" disableScrollDown>
-      <main className=" flex flex-col h-full justify-evenly">
-        <section className="flex flex-col gap-16 ">
+      <main className=" flex flex-col h-full md:mt-0 mt-8 gap-10 md:gap-0 md:justify-evenly">
+        <section className="flex flex-col gap-6 lg:gap-16 ">
           <div className="text-center">
             <p className="text-lg text-gray-600">Get in Touch</p>
             <p className="text-4xl lg:text-7xl ">Contact Me</p>
@@ -34,8 +34,8 @@ export default function Contact() {
             }
           </div>
         </section>
-        <section className="w-full flex flex-col gap-3 font-sans">
-          <div className="flex items-center justify-center flex-col md:flex-row text-xl gap-1 sm:gap-3">
+        <section className="w-full flex flex-col gap-3 font-sans mt-5">
+          <div className="grid grid-cols-2   text-xl gap-1 sm:gap-3 md:flex md:justify-center">
             <Routes />
           </div>
           <p className={`font-serif text-lg sm:text-xl text-gray-400 text-center hover:text-black transition-all cursor-default`}>Copyright © 2024 Mam Lyhua. All Rights Reserved.</p>
