@@ -79,10 +79,10 @@ export default function Navbar() {
     >
       <section>
         <button
-          className={`${prozaLibre.className} text-2xl uppercase`}
+          className={`${prozaLibre.className} text-2xl lg:text-3xl uppercase`}
           onClick={() => scrollToSection("home")}
         >
-          personal
+          hour.dev
         </button>
       </section>
       <section className="hidden lg:flex gap-5 items-center">
