@@ -8,7 +8,7 @@ export const education = [
     date: "current",
   },
   {
-    school: "KIT python course",
+    school: "KIT python short course (10 weeks)",
     date: "completed 2023",
   },
   {
