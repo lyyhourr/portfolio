@@ -43,7 +43,7 @@ export const techs = [
 export const WorkExperience = [
   {
     job: "Internship",
-    duration: "6 Months",
-    detail: "learning and assisted senior dev with web frontend works.",
+    duration: "Web Developer",
+    detail: "learning and assisted senior dev with frontend works. (6 months)",
   },
 ];

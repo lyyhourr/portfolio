@@ -39,14 +39,7 @@ export default function Project() {
                         fill
                         alt=""
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover  group-hover:hidden "
-                      />
-                      <Image
-                        src={`/projects/${item.image}2.png`}
-                        fill
-                        alt=""
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover hidden group-hover:block"
+                        className="object-cover"
                       />
                     </div>
                     <div className="flex flex-col gap-3 my-3 w-[95%] mx-auto">
@@ -70,7 +63,7 @@ export default function Project() {
                         </Link>
                         <Link
                           href={item.websiteUrl}
-                          className="flex text-gray-500 hover:text-black hover:underline transition-all group-hover:animate-bounce"
+                          className="flex text-gray-500 hover:text-black hover:underline transition-all group-hover:animate-bounce group-hover:text-black"
                         >
                           <LucideView />
                           <span>Live Website</span>
