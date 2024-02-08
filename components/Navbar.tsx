@@ -2,6 +2,7 @@
 import { imbPlexSans, prozaLibre } from "@/fonts/font";
 import { Download, Menu, X } from "lucide-react";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 export const routes = ["project", "experience", "about", "contact"];
 export const scrollToSection = (id: string) => {
@@ -38,8 +39,10 @@ export default function Navbar() {
   };
 
   return openMenu ? (
-    <div
+    <motion.div
       className={`${imbPlexSans.className} fixed w-screen h-screen bg-white p-10`}
+      initial={{ y: -500 }}
+      animate={{ y: 0 }}
     >
       <div className="flex w-full justify-end">
         <button className="" onClick={() => setOpenMenu(false)}>
@@ -72,7 +75,7 @@ export default function Navbar() {
         ))}
         {ResumeButton()}
       </div>
-    </div>
+    </motion.div>
   ) : (
     <nav
       className={`${imbPlexSans.className} flex z-10 items-center w-full h-[70px] justify-between`}
