@@ -57,7 +57,7 @@ export default function HomePage() {
             <p
               className={` uppercase text-4xl sm:text-5xl lg:text-7xl lg:text-center font-extrabold ${spaceGrotesk.className}`}
             >
-              <span className={`font-extrabold`}>Web</span>{" "}
+              <span className={`font-extrabold`}>Frontend</span>{" "}
               {TextStroke({ text: "developer", className: "" })}
             </p>
             <div className="flex gap-4 w-full pt-7 justify-center lg:gap-12">
