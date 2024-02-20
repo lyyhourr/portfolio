@@ -1,5 +1,14 @@
 export const project_data = [
   {
+    title: "Flex Gear",
+    type: " ecommerce website",
+    image: "flex-gear",
+    githubUrl: "https://github.com/lyyhourr/flex-gear",
+    websiteUrl: "https://flexgear.netlify.app/",
+    about:
+      "Discover a tech haven for laptops, headphones, phones, accessories, and cameras at Flex Gear. Quality assured, shopping made easy.",
+  },
+  {
     title: "Recipe Box",
     type: " recipe website",
     image: "recipe-box",
