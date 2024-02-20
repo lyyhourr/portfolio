@@ -9,13 +9,13 @@ export const project_data = [
       "Discover a tech haven for laptops, headphones, phones, accessories, and cameras at Flex Gear. Quality assured, shopping made easy.",
   },
   {
-    title: "Recipe Box",
-    type: " recipe website",
-    image: "recipe-box",
-    githubUrl: "https://github.com/lyyhourr/recipe-box",
-    websiteUrl: "https://recipesboxx.netlify.app/",
+    title: "Pophorn",
+    type: " movie website (UI only)",
+    image: "pophorn",
+    githubUrl: "https://github.com/lyyhourr/movie-website",
+    websiteUrl: "https://pophorn.vercel.app/",
     about:
-      "Easily search by ingredients, cuisine, and meal type.Get step-by-step instructions and nutritional info. Cooking made easy, anytime, anywhere.",
+      "Explore the latest movies updated daily. Search by year or category, from horror to comedy to kid-friendly films.",
   },
   {
     title: "Wallet Watcher",
@@ -27,12 +27,12 @@ export const project_data = [
       "Create an account to manage your expenses and income seamlessly. Track your spending and earnings, and easily query by date or sort to see where your money goes!",
   },
   {
-    title: "Pophorn",
-    type: " movie website (UI only)",
-    image: "pophorn",
-    githubUrl: "https://github.com/lyyhourr/movie-website",
-    websiteUrl: "https://pophorn.vercel.app/",
+    title: "Recipe Box",
+    type: " recipe website",
+    image: "recipe-box",
+    githubUrl: "https://github.com/lyyhourr/recipe-box",
+    websiteUrl: "https://recipesboxx.netlify.app/",
     about:
-      "Explore the latest movies updated daily. Search by year or category, from horror to comedy to kid-friendly films.",
+      "Easily search by ingredients, cuisine, and meal type.Get step-by-step instructions and nutritional info. Cooking made easy, anytime, anywhere.",
   },
 ];
