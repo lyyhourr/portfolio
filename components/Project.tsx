@@ -35,6 +35,7 @@ export default function Project() {
                   <div className="rounded-lg group  flex flex-col h-[500px]   bg-white ">
                     <div className="  h-[350px]  cursor-pointer group2 rounded-t-md relative   w-full overflow-hidden ">
                       <Image
+                        priority
                         src={`/projects/${item.image}.png`}
                         fill
                         alt=""

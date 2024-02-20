@@ -2,7 +2,7 @@ export const project_data = [
   {
     title: "Flex Gear",
     type: " ecommerce website",
-    image: "flex-gear",
+    image: "flexgear",
     githubUrl: "https://github.com/lyyhourr/flex-gear",
     websiteUrl: "https://flexgear.netlify.app/",
     about:
