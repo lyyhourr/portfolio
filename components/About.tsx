@@ -32,6 +32,7 @@ export default function About() {
                 width={400}
                 height={400}
                 alt="about me img"
+                unoptimized
                 className="w-full h-full"
               />
             </div>

@@ -41,6 +41,7 @@ export default function Project() {
                         alt=""
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover"
+                        unoptimized
                       />
                     </div>
                     <div className="flex flex-col gap-3 my-3 w-[95%] mx-auto">

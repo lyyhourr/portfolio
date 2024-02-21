@@ -35,6 +35,7 @@ export default function HomePage() {
             width={10000}
             height={10000}
             alt=""
+            unoptimized
             className="w-[500px] lg:w-[600px]"
           />
         </section>

@@ -22,6 +22,7 @@ export default function PageLayout({ children, scrollDownTo, scrollUpTo, disable
                         height={30}
                         alt='arrow'
                         className='rotate-180 opacity-40 hover:opacity-100  transition-all w-7 h-7 lg:w-8 lg:h-8 '
+                        unoptimized
                     />
                 </button>
             </div>
@@ -33,7 +34,7 @@ export default function PageLayout({ children, scrollDownTo, scrollUpTo, disable
                         height={40}
                         alt='arrow'
                         className=' animate-bounce transition-all w-8 h-8 lg:w-10 lg:h-10'
-
+                        unoptimized
                     />
                 </button>
             </div>

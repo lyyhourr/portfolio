@@ -21,9 +21,8 @@ export default function Contact() {
               <Link
                 href={item.href}
                 key={item.text}
-                className={`flex items-center  ${
-                  item.img === "fb2" && "underline"
-                } ${item.img === "tele" && "underline"}`}
+                className={`flex items-center  ${item.img === "fb2" && "underline"
+                  } ${item.img === "tele" && "underline"}`}
               >
                 <Image
                   src={`/contact/${item.img}.png`}
@@ -31,6 +30,7 @@ export default function Contact() {
                   height={50}
                   alt=""
                   className=" p-2 "
+                  unoptimized
                 />
                 <p className="text-lg">{item.text}</p>
               </Link>

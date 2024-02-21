@@ -62,6 +62,7 @@ export default function Experience() {
                     width={35}
                     height={35}
                     alt=""
+                    unoptimized
                     className="rounded-md w-[35px] h-[35px] "
                   />
                   <p className="first-letter:uppercase ">{item.name}</p>
