@@ -36,6 +36,10 @@ export const techs = [
     img: "supabase",
   },
   {
+    name: "mongo db",
+    img: "mongodb",
+  },
+  {
     name: "python",
     img: "python",
   },
