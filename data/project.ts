@@ -5,6 +5,7 @@ export const project_data = [
     image: "flexgear",
     githubUrl: "https://github.com/lyyhourr/flex-gear",
     websiteUrl: "https://flexgearr.vercel.app/",
+    techs: "Nextjs, Tailwind",
     about:
       "Discover a tech haven for laptops, headphones, phones, accessories, and cameras at Flex Gear. Quality assured, shopping made easy.",
   },
@@ -14,6 +15,7 @@ export const project_data = [
     image: "pophorn",
     githubUrl: "https://github.com/lyyhourr/movie-website",
     websiteUrl: "https://pophorn.vercel.app/",
+    techs: "Nextjs, Tailwind, Swiper Js",
     about:
       "Explore the latest movies updated daily. Search by year or category, from horror to comedy to kid-friendly films.",
   },
@@ -23,6 +25,7 @@ export const project_data = [
     image: "wallet-watcher",
     githubUrl: "https://github.com/lyyhourr/wallet-watcher",
     websiteUrl: "https://wallets-watcher.vercel.app/",
+    techs: "Nextjs, Tailwind, Shadcn UI, Supabase",
     about:
       "Create an account to manage your expenses and income seamlessly. Track your spending and earnings, and easily query by date or sort to see where your money goes!",
   },
@@ -31,6 +34,7 @@ export const project_data = [
     type: " recipe website",
     image: "recipe-box",
     githubUrl: "https://github.com/lyyhourr/recipe-box",
+    techs: "Nextjs, Tailwind, Shadcn UI, Swiper Js",
     websiteUrl: "https://recipesboxx.netlify.app/",
     about:
       "Easily search by ingredients, cuisine, and meal type.Get step-by-step instructions and nutritional info. Cooking made easy, anytime, anywhere.",

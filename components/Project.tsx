@@ -52,9 +52,16 @@ export default function Project() {
                       <p className={`${montserrat.className} text-2xl`}>
                         {item.title}
                       </p>
-                      <p className="text-gray-500 h-[80px] overflow-auto text-sm">
-                        {item.about}
-                      </p>
+                      <div className="flex flex-col gap-2">
+                        <p className=" text-sm">
+                          Techs :  &#160; <span className="text-gray-500 text-sm">{item.techs}</span>
+                        </p>
+                        <p className="text-gray-500 h-[80px] overflow-auto text-sm">
+                          {item.about}
+                        </p>
+                      </div>
+
+
                       <div className="flex  items-center gap-4">
                         <Link
                           href={item.githubUrl}
