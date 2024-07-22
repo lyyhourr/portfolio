@@ -45,6 +45,6 @@ export const WorkExperience = [
   {
     job: "Fulltime",
     duration: "ReactJs Dev",
-    detail: "Develope web application using ReactJs. (currently)",
+    detail: "Develop web application using ReactJs. (currently)",
   },
 ];
