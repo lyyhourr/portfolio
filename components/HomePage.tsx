@@ -40,26 +40,13 @@ export default function HomePage() {
           />
         </section>
         <section className="w-full flex justify-center -mt-20 lg:mt-0  flex-col gap-2 items-center lg:items-end lg:p-2 ">
-          <div>
-            <div
-              className={`flex flex-wrap items-end justify-center lg:gap-x-3  gap-x-1 uppercase lg:text-center font-extrabold ${spaceGrotesk.className}`}
-            >
-              <p
-                className={`font-extralight  text-2xl sm:text-3xl lg:text-5xl text-gray-500`}
-              >
-                Hello I&apos;m
-              </p>{" "}
-              <p className={`font-extrabold  text-4xl sm:text-5xl lg:text-7xl`}>
-                Mam Lyhua,
-              </p>
-            </div>
-          </div>
           <div className="text-center">
             <p
               className={` uppercase text-4xl sm:text-5xl lg:text-7xl lg:text-center font-extrabold ${spaceGrotesk.className}`}
             >
-              <span className={`font-extrabold`}>Frontend</span>{" "}
-              {TextStroke({ text: "developer", className: "" })}
+              {TextStroke({ text: "Hi there!!", className: "" })}
+              <br />
+              <span className={`font-extrabold`}>I&apos;m Mam Lyhua</span>
             </p>
             <div className="flex gap-4 w-full pt-7 justify-center lg:gap-12">
               <button

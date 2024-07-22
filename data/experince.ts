@@ -28,10 +28,6 @@ export const techs = [
     img: "typescript",
   },
   {
-    name: "php",
-    img: "php",
-  },
-  {
     name: "supbase",
     img: "supabase",
   },
@@ -39,15 +35,16 @@ export const techs = [
     name: "mongo db",
     img: "mongodb",
   },
-  {
-    name: "python",
-    img: "python",
-  },
 ];
 export const WorkExperience = [
   {
     job: "Internship",
     duration: "Web Developer",
     detail: "learning and assisted senior dev with frontend works. (6 months)",
+  },
+  {
+    job: "Fulltime",
+    duration: "ReactJs Dev",
+    detail: "Develope web application using ReactJs. (currently)",
   },
 ];

@@ -1,21 +1,17 @@
 export const education = [
   {
     school: "Setect Institute",
-    date: "current",
   },
   {
     school: "ACE",
-    date: "current",
   },
   {
     school: "KIT python short course",
-    date: "completed 2023",
   },
   {
-    school: "highschool",
-    date: "graduated 2020",
+    school: "Highschool",
   },
 ];
 
 export const aboutme =
-  "Hey, I'm Lyhua, a third-year student who enjoy coding and learning new things. I'm always eager to learn and love turning concepts into reality with code !!";
+  "Hey, I'm Lyhua. I enjoy coding and learning new things, always eager to turn concepts into reality with code. I love being creative and making ideas work !!";

@@ -1,19 +1,12 @@
-import React from "react";
-import PageLayout from "./PageLayout";
-import Image from "next/image";
 import { aboutme, education } from "@/data/about";
+import Image from "next/image";
+import PageLayout from "./PageLayout";
 
 export default function About() {
-  const EducationText = ({
-    schoolName,
-    date,
-  }: {
-    date: string;
-    schoolName: string;
-  }) => (
+  const EducationText = ({ schoolName }: { schoolName: string }) => (
     <div className="max-w-3xl flex items-center gap-1 text-sm md:text-base lg:text-lg">
       <p>-{schoolName}</p>
-      <p className="text-xs md:text-base  text-gray-500">({date})</p>
+      {/* <p className="text-xs md:text-base  text-gray-500">({date})</p> */}
     </div>
   );
   return (
@@ -41,7 +34,7 @@ export default function About() {
                 <p className="text-start text-2xl">Education: </p>
                 {education.map((item) => (
                   <EducationText
-                    date={item.date}
+                    // date={item.date}
                     schoolName={item.school}
                     key={item.school}
                   />
