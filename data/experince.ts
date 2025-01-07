@@ -27,14 +27,6 @@ export const techs = [
     name: "typescirpt",
     img: "typescript",
   },
-  {
-    name: "supbase",
-    img: "supabase",
-  },
-  {
-    name: "mongo db",
-    img: "mongodb",
-  },
 ];
 export const WorkExperience = [
   {
