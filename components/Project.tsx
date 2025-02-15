@@ -54,17 +54,20 @@ export default function Project() {
                       </p>
                       <div className="flex flex-col gap-2">
                         <p className=" text-sm">
-                          Techs :  &#160; <span className="text-gray-500 text-sm">{item.techs}</span>
+                          Techs : &#160;{" "}
+                          <span className="text-gray-500 text-sm">
+                            {item.techs}
+                          </span>
                         </p>
                         <p className="text-gray-500 h-[80px] overflow-auto text-sm">
                           {item.about}
                         </p>
                       </div>
 
-
                       <div className="flex  items-center gap-4">
                         <Link
                           href={item.githubUrl}
+                          target="_blank"
                           className="flex text-gray-500 hover:text-black hover:underline transition-all"
                         >
                           <Github />
@@ -72,6 +75,7 @@ export default function Project() {
                         </Link>
                         <Link
                           href={item.websiteUrl}
+                          target="_blank"
                           className="flex text-gray-500 hover:text-black hover:underline transition-all group-hover:animate-bounce group-hover:text-black"
                         >
                           <LucideView />
