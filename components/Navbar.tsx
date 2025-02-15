@@ -18,11 +18,11 @@ export default function Navbar() {
 
   const ResumeButton = () => {
     const handleDownload = () => {
-      const fileUrl = "/cv/cv_mamlyhua.pdf";
+      const fileUrl = "/cv/resume.pdf";
 
       const link = document.createElement("a");
       link.href = fileUrl;
-      link.setAttribute("download", "mamlyhua-CV.pdf");
+      link.setAttribute("download", "mamlyhua-cv.pdf");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
