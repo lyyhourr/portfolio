@@ -59,6 +59,7 @@ export default function AboutSection() {
               src="/nhom.jpg"
               alt="Workspace"
               width={500}
+              priority
               height={500}
               className="relative rounded-2xl shadow-2xl border border-gray-700/50 object-cover"
             />

@@ -21,6 +21,7 @@ export default function HeroSection() {
               src="/naruto.jpg"
               alt="Profile"
               width={160}
+              priority
               height={160}
               className="relative rounded-full object-cover border-4 border-gray-700 shadow-2xl"
             />
