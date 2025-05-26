@@ -36,7 +36,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base lg:text-lg xl::text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             I break things, fix them, and pretend it was intentional... while
             praying it works in production 🤣.
           </p>
