@@ -69,14 +69,14 @@ const technologies = [
     accent: "bg-blue-500/30",
   },
   {
-    name: "ChatGPT",
+    name: "ChatGPT 🤣",
     icon: MessageCircle,
     gradient: "from-emerald-900/30 to-green-900/30",
     iconBg: "from-emerald-600 to-green-600",
     accent: "bg-emerald-500/30",
   },
   {
-    name: "v0",
+    name: "♥️ v0 ♥️",
     icon: Sparkles,
     gradient: "from-purple-900/30 to-violet-900/30",
     iconBg: "from-purple-600 to-violet-600",
@@ -93,7 +93,7 @@ export default function TechnologySection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-gray-200">
-            Technologies I Used
+            Technologies & Tools I Used
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             My &quot;YouTube Tech Stack&quot; — the tools I picked up while
