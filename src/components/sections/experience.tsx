@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Building2, Calendar, MapPin } from "lucide-react";
 
 const workExperience = [
@@ -16,7 +17,7 @@ const workExperience = [
     iconBg: "from-blue-600 to-indigo-600",
   },
   {
-    company: "Edemy. ( Learned a lot there 🥺)",
+    company: "Edemy.",
     position: "Junior React Js Developer",
     duration: "Apr 2024 - Mar 2025",
     location: "Phnom Penh",
@@ -71,32 +72,29 @@ export default function WorkExperienceSection() {
         </div>
 
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-700/50 hidden md:block"></div>
 
           <div className="space-y-12">
             {workExperience.map((job, index) => (
               <div key={index} className="relative">
-                {/* Timeline dot */}
                 <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-gray-600 to-gray-500 rounded-full border-4 border-gray-900 hidden md:block"></div>
-
-                {/* Experience card */}
                 <div className="md:ml-20">
                   <div
-                    className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${job.gradient} backdrop-blur-sm border border-gray-700/30 hover:border-gray-600/50 transition-all duration-500 transform hover:scale-[1.01] hover:-translate-y-1`}
+                    className={cn(
+                      "group relative overflow-hidden rounded-2xl bg-gradient-to-br backdrop-blur-sm border border-gray-700/30 hover:border-gray-600/50 transition-all duration-500 transform hover:scale-[1.01] hover:-translate-y-1",
+                      job.gradient
+                    )}
                   >
-                    {/* Subtle background gradient */}
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-700/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                    {/* Floating orb */}
                     <div className="absolute top-4 right-4 w-16 h-16 bg-gray-600/10 rounded-full blur-xl"></div>
-
                     <div className="relative p-8">
-                      {/* Header */}
                       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6">
                         <div className="flex items-start space-x-4">
                           <div
-                            className={`w-12 h-12 bg-gradient-to-br ${job.iconBg} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-all duration-300`}
+                            className={cn(
+                              "w-12 h-12 bg-gradient-to-br  rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-all duration-300",
+                              job.iconBg
+                            )}
                           >
                             <Building2 className="h-6 w-6 text-white" />
                           </div>
@@ -105,7 +103,14 @@ export default function WorkExperienceSection() {
                               {job.position}
                             </h3>
                             <p className="text-lg text-gray-300 font-semibold">
-                              {job.company}
+                              {job.company}{" "}
+                              {job.company.includes("Edemy") ? (
+                                <span className="text-sm">
+                                  ( Learned a lot there 🥺 )
+                                </span>
+                              ) : (
+                                ""
+                              )}
                             </p>
                             <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-gray-400">
                               <div className="flex items-center gap-1">
@@ -124,7 +129,6 @@ export default function WorkExperienceSection() {
                         </div>
                       </div>
 
-                      {/* Description */}
                       <div className="mb-6">
                         <ul className="space-y-2">
                           {job.description.map((item, itemIndex) => (
@@ -141,7 +145,6 @@ export default function WorkExperienceSection() {
                         </ul>
                       </div>
 
-                      {/* Technologies */}
                       <div>
                         <h4 className="text-sm font-semibold text-gray-400 mb-3">
                           Technologies Used:
@@ -165,7 +168,6 @@ export default function WorkExperienceSection() {
           </div>
         </div>
 
-        {/* Floating elements */}
         <div className="absolute top-20 left-10 w-1 h-1 bg-gray-500 rounded-full animate-ping opacity-30"></div>
         <div className="absolute top-40 right-20 w-1.5 h-1.5 bg-gray-600 rounded-full animate-pulse opacity-20"></div>
         <div className="absolute bottom-20 left-20 w-1 h-1 bg-gray-500 rounded-full animate-bounce opacity-25"></div>

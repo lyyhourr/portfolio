@@ -39,7 +39,7 @@ export default function Navbar() {
 
           <button
             onClick={toggleMenu}
-            className="md:hidden text-white hover:text-gray-300 transition-colors duration-200"
+            className="md:hidden text-white hover:text-gray-300 transition-colors duration-200 cursor-pointer"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
