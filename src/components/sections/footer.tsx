@@ -11,9 +11,6 @@ export default function FooterSection() {
           <p className="text-gray-400">
             © {new Date().getFullYear()} Mam Lyhua.
           </p>
-          <p className="text-gray-400 text-sm">
-            Made by v0, and proudly prompt by me 💅
-          </p>
         </div>
       </div>
     </footer>

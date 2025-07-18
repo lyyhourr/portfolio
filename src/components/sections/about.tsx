@@ -27,10 +27,8 @@ export default function AboutSection() {
             </p>
 
             <p className="text-gray-300 leading-relaxed text-lg mt-4">
-              Outside of coding, I love watching anime — my top 1 of the list is{" "}
-              <span className="text-white font-semibold">Naruto Kunn</span>. I
-              also love football ( fan Neymar 🇧🇷 ) and music (fan Tena Zin).
-              Riding moto to work + Tena songs is the best.
+              Besides coding, I enjoy watching anime, football, and listening to
+              music.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">

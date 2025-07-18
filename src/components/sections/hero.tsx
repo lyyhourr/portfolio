@@ -18,7 +18,7 @@ export default function HeroSection() {
           <div className="relative w-40 h-40 mx-auto mb-8 group">
             <div className="absolute inset-0 bg-white/20 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
             <Image
-              src="/naruto.jpg"
+              src="/pain.jpg"
               alt="Profile"
               width={160}
               priority

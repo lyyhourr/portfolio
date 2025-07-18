@@ -68,20 +68,6 @@ const technologies = [
     iconBg: "from-blue-600 to-slate-600",
     accent: "bg-blue-500/30",
   },
-  {
-    name: "ChatGPT 🤣",
-    icon: MessageCircle,
-    gradient: "from-emerald-900/30 to-green-900/30",
-    iconBg: "from-emerald-600 to-green-600",
-    accent: "bg-emerald-500/30",
-  },
-  {
-    name: "♥️ v0 ♥️",
-    icon: Sparkles,
-    gradient: "from-purple-900/30 to-violet-900/30",
-    iconBg: "from-purple-600 to-violet-600",
-    accent: "bg-purple-500/30",
-  },
 ];
 
 export default function TechnologySection() {
@@ -99,7 +85,7 @@ export default function TechnologySection() {
           <div className="w-32 h-0.5 bg-gray-600 mx-auto rounded-full mt-8"></div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {technologies.map((tech, index) => (
             <div
               key={index}
