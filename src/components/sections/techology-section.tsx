@@ -7,8 +7,6 @@ import {
   Palette,
   Route,
   Server,
-  MessageCircle,
-  Sparkles,
 } from "lucide-react";
 
 const technologies = [
