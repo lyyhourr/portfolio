@@ -32,7 +32,7 @@ const projects = [
     title: "Recipe Box",
     description:
       "I built this project with a friend — it was my first time using Git and working with someone else on the same codebase.( basically just add, commit, push 🤣 )",
-    image: "/flex-gear.png",
+    image: "/recipe-box.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     live: "https://recipesboxx.netlify.app/",
   },

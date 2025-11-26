@@ -27,16 +27,16 @@ export default function AboutSection() {
             </p>
 
             <p className="text-gray-300 leading-relaxed text-lg mt-4">
-              Besides coding, I enjoy watching anime, football, and listening to
+              Besides coding, I enjoy playing movie, football, and listening to
               music.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
                 { number: "1+", label: "Years of Work Experience" },
-                { number: "4+", label: "Bugs Shipped to Production 💅" },
-                { number: "3+", label: "Freelance Projects Completed" },
-                { number: "1000+", label: "Project Ideas (All Failed 🤡)" },
+                { number: "24/7", label: "Passion for Learning" },
+                { number: "4+", label: "Freelance Projects Completed" },
+                { number: "∞", label: "Opportunities to Grow" },
               ].map((stat, index) => (
                 <div
                   key={index}
@@ -54,7 +54,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-white/10 rounded-2xl blur-xl"></div>
             <Image
-              src="/nhom.jpg"
+              src="/me2.jpg"
               alt="Workspace"
               width={500}
               priority

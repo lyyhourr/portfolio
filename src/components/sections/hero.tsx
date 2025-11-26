@@ -32,13 +32,13 @@ export default function HeroSection() {
               MAM LYHUA
             </h1>
             <div className="text-xl sm:text-2xl text-gray-300 mb-2">
-              4th Year MIS Student & Gen Z Developer
+              Software Developer
             </div>
           </div>
 
           <p className="text-sm md:text-base lg:text-lg xl::text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            I break things, fix them, and pretend it was intentional... while
-            praying it works in production 🤣.
+            I love learning new things, solving challenges, and growing as a
+            developer to build cleaner and smarter software.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
