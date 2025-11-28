@@ -22,7 +22,7 @@ export default function HeroSection() {
               src="/me.jpg"
               alt="Profile"
               fill
-              className="object-cover rounded-full border-4 border-gray-700 shadow-2xl"
+              className="object-cover rounded-full border-4 border-gray-700 shadow-2xl object-[50%_70%]"
             />
           </div>
 
