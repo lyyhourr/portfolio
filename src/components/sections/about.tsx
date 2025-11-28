@@ -19,21 +19,24 @@ export default function AboutSection() {
             </h3>
 
             <p className="text-gray-300 leading-relaxed text-lg">
-              My first internship started in September 2023. Back then, I didn’t
-              even know what Flexbox or Grid were — all I had was basic HTML and
-              confidence to show up and do my best. Luckily, I had a friend who
-              helped me along the way. That’s when my coding journey truly
-              began.
+              I began learning coding seriously during my internship, starting
+              with basic HTML and a lot of curiosity. Guided by a friend, I
+              learned the basics and soon could build projects on my own. I
+              discovered how fun coding can be and have been exploring new
+              technologies, trying out different tools, and creating projects
+              that solve real-world problems. Coding has taught me patience,
+              problem-solving, and the joy of seeing ideas come to life.
             </p>
 
             <p className="text-gray-300 leading-relaxed text-lg mt-4">
-              Besides coding, I enjoy playing movie, football, and listening to
-              music.
+              Outside of coding, I enjoy watching movies, playing football, and
+              music. I believe that balancing work, hobbies, and fun helps me
+              stay motivated and keep growing every day.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
-                { number: "1+", label: "Years of Work Experience" },
+                { number: "2+", label: "Years of Work Experience" },
                 { number: "24/7", label: "Passion for Learning" },
                 { number: "4+", label: "Freelance Projects Completed" },
                 { number: "∞", label: "Opportunities to Grow" },

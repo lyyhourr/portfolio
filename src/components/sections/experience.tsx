@@ -5,7 +5,7 @@ const workExperience = [
   {
     company: "KG Software Solutions.",
     position: "Frontend Internship",
-    duration: "Sep 2023 - Mar 2024",
+    duration: "2023 - 2023",
     location: "Phnom Penh",
     type: "Part-time",
     description: [
@@ -19,7 +19,7 @@ const workExperience = [
   {
     company: "Edemy.",
     position: "Junior React Js Developer",
-    duration: "Apr 2024 - Mar 2025",
+    duration: "2024 - 2025",
     location: "Phnom Penh",
     type: "Full-time",
     description: [
@@ -34,7 +34,7 @@ const workExperience = [
   {
     company: "LDI.",
     position: "Full Stack Developer",
-    duration: "Apr 2025 - Current",
+    duration: "2025 - Current",
     location: "Phnom Penh",
     type: "Full-time",
     description: [
