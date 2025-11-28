@@ -15,15 +15,14 @@ export default function HeroSection() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
-          <div className="relative w-40 h-40 mx-auto mb-8 group">
+          <div className="relative w-40 h-40 mx-auto mb-8 group overflow-hidden rounded-full -mt-6">
             <div className="absolute inset-0 bg-white/20 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+
             <Image
-              src="/pain.jpg"
+              src="/me.jpg"
               alt="Profile"
-              width={160}
-              priority
-              height={160}
-              className="relative rounded-full object-cover border-4 border-gray-700 shadow-2xl"
+              fill
+              className="object-cover rounded-full border-4 border-gray-700 shadow-2xl"
             />
           </div>
 
