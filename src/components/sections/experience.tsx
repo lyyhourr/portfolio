@@ -3,35 +3,6 @@ import { Building2, Calendar, MapPin } from "lucide-react";
 
 const workExperience = [
   {
-    company: "KG Software Solutions.",
-    position: "Frontend Internship",
-    duration: "2023 - 2023",
-    location: "Phnom Penh",
-    type: "Part-time",
-    description: [
-      "Built basic UI components and layouts to support ongoing projects.",
-      "Assisted senior developers with frontend development tasks and bug fixes.",
-    ],
-    technologies: ["React Js", "TypeScript", "Tailwind CSS", "Next.Js"],
-    gradient: "from-blue-900/20 to-indigo-900/20",
-    iconBg: "from-blue-600 to-indigo-600",
-  },
-  {
-    company: "Edemy.",
-    position: "Junior React Js Developer",
-    duration: "2024 - 2025",
-    location: "Phnom Penh",
-    type: "Full-time",
-    description: [
-      "Developed the frontend of the MIS system using React.js.",
-      "Integrated frontend  with backend APIs to ensure seamless data flow.",
-      "Collaborated closely with senior backend developers to implement and troubleshoot features.",
-    ],
-    technologies: ["React Js", "TypeScript", "Mantine UI"],
-    gradient: "from-emerald-900/20 to-teal-900/20",
-    iconBg: "from-emerald-600 to-teal-600",
-  },
-  {
     company: "LDI.",
     position: "Full Stack Developer",
     duration: "2025 - Current",
@@ -51,6 +22,35 @@ const workExperience = [
     ],
     gradient: "from-purple-900/20 to-pink-900/20",
     iconBg: "from-purple-600 to-pink-600",
+  },
+  {
+    company: "Edemy.",
+    position: "Junior React Js Developer",
+    duration: "2024 - 2025",
+    location: "Phnom Penh",
+    type: "Full-time",
+    description: [
+      "Developed the frontend of the MIS system using React.js.",
+      "Integrated frontend  with backend APIs to ensure seamless data flow.",
+      "Collaborated closely with senior backend developers to implement and troubleshoot features.",
+    ],
+    technologies: ["React Js", "TypeScript", "Mantine UI"],
+    gradient: "from-emerald-900/20 to-teal-900/20",
+    iconBg: "from-emerald-600 to-teal-600",
+  },
+  {
+    company: "KG Software Solutions.",
+    position: "Frontend Internship",
+    duration: "2023 - 2023",
+    location: "Phnom Penh",
+    type: "Part-time",
+    description: [
+      "Built basic UI components and layouts to support ongoing projects.",
+      "Assisted senior developers with frontend development tasks and bug fixes.",
+    ],
+    technologies: ["React Js", "TypeScript", "Tailwind CSS", "Next.Js"],
+    gradient: "from-blue-900/20 to-indigo-900/20",
+    iconBg: "from-blue-600 to-indigo-600",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function WorkExperienceSection() {
                   <div
                     className={cn(
                       "group relative overflow-hidden rounded-2xl bg-gradient-to-br backdrop-blur-sm border border-gray-700/30 hover:border-gray-600/50 transition-all duration-500 transform hover:scale-[1.01] hover:-translate-y-1",
-                      job.gradient
+                      job.gradient,
                     )}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-700/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -93,7 +93,7 @@ export default function WorkExperienceSection() {
                           <div
                             className={cn(
                               "w-12 h-12 bg-gradient-to-br  rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-all duration-300",
-                              job.iconBg
+                              job.iconBg,
                             )}
                           >
                             <Building2 className="h-6 w-6 text-white" />
