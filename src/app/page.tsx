@@ -6,6 +6,7 @@ import HeroSection from "@/components/sections/hero";
 import Navbar from "@/components/sections/navbar";
 import ProjectSection from "@/components/sections/project";
 import TechnologySection from "@/components/sections/techology-section";
+export const dynamic = "force-static";
 
 export default function Portfolio() {
   return (
