@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["About", "Projects", "Skills", "Experience"];
+  const navItems = ["About", "Projects", "Experience", "Technology"];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div
           className={cn(
             "md:hidden transition-all duration-300 ease-in-out overflow-hidden",
-            isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+            isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0",
           )}
         >
           <div className="py-4 space-y-4 border-t border-gray-800/50">

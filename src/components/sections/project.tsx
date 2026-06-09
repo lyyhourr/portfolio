@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import AnimationWrapper from "../animation-wrapper";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import {
@@ -54,54 +55,92 @@ export default function ProjectSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="group bg-gray-900/80 border-gray-700/50 hover:border-white/50 transition-all duration-500 transform  hover:shadow-2xl hover:shadow-white/10"
+            <AnimationWrapper
+              key={project.title}
+              animation="zoom"
+              delay={index * 150}
             >
-              <CardHeader className="p-0">
-                <div className="relative overflow-hidden rounded-t-lg">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={300}
-                    height={200}
-                    className="w-full h-48 object-cover  transition-transform duration-500"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="mb-3 text-white group-hover:text-gray-300 transition-all duration-300">
-                  {project.title}
-                </CardTitle>
-                <CardDescription className="mb-4 text-gray-300">
-                  {project.description}
-                </CardDescription>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
-                    <Badge
-                      key={techIndex}
-                      variant="outline"
-                      className="text-xs border-gray-600 text-gray-300 hover:border-white hover:text-white transition-colors duration-300"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-                <div className="flex space-x-3">
+              <Card
+                className="
+          group
+          bg-gray-900/80
+          border-gray-700/50
+          hover:border-white/20
+          transition-all
+          duration-500
+          hover:-translate-y-2
+          hover:shadow-2xl
+          hover:shadow-white/10
+        "
+              >
+                <CardHeader className="p-0">
+                  <div className="relative overflow-hidden rounded-t-lg">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={300}
+                      height={200}
+                      className="
+                w-full
+                h-48
+                object-cover
+                transition-transform
+                duration-700
+                group-hover:scale-105
+              "
+                    />
+                  </div>
+                </CardHeader>
+
+                <CardContent className="p-6">
+                  <CardTitle className="mb-3 text-white group-hover:text-gray-300 transition-all duration-300">
+                    {project.title}
+                  </CardTitle>
+
+                  <CardDescription className="mb-4 text-gray-300">
+                    {project.description}
+                  </CardDescription>
+
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.technologies.map((tech, techIndex) => (
+                      <Badge
+                        key={techIndex}
+                        variant="outline"
+                        className="
+                  text-xs
+                  border-white/10
+                  text-gray-300
+                  hover:border-white/20
+                  hover:bg-white/5
+                  transition-all
+                "
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+
                   <Button
                     size="sm"
                     asChild
-                    className="bg-white text-black hover:bg-gray-200 border-0 shadow-lg shadow-white/10"
+                    className="
+              bg-white
+              text-black
+              hover:bg-gray-200
+              shadow-lg
+              shadow-white/10
+            "
                   >
                     <Link href={project.live} target="_blank">
                       <ExternalLink className="mr-2 h-3 w-3" />
                       Live Demo
                     </Link>
                   </Button>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </AnimationWrapper>
           ))}
         </div>
       </div>

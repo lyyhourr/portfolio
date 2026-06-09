@@ -10,7 +10,7 @@ export default function HeroSection() {
     <section
       className={cn(
         "relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 z-10",
-        spaceGrotesk.className
+        spaceGrotesk.className,
       )}
     >
       <div className="max-w-7xl mx-auto">

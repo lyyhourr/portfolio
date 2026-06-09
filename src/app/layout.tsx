@@ -6,6 +6,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500"] });
 
 export const metadata: Metadata = {
   title: "Lyhua M",
+  description: "Still trying to center a div.",
 };
 
 export default function RootLayout({
