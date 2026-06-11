@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Pop Horn",
     description:
-      "My very first web project that got me out of tutorial hell and helped me understand what  API is. The code is messy, but I'm still proud of it.",
+      "My very first web project that got me out of tutorial hell and helped me understand what API is. The code is messy, but I'm still proud of it.",
     image: "/pophorn.png",
     technologies: ["Next.js", "TypeScript", "Shadcn UI", "Swiper Js"],
     live: "https://pophorn.vercel.app",
@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Recipe Box",
     description:
-      "I built this project with a friend — it was my first time using Git and working with someone else on the same codebase.( basically just add, commit, push 🤣 )",
+      "I built this project with a friend — it was my first time using Git and working with someone else on the same codebase. (basically just add, commit, push 🤣)",
     image: "/recipe-box.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     live: "https://recipesboxx.netlify.app/",
@@ -47,7 +47,9 @@ export default function ProjectSection() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
             Projects
           </h2>
-          <div className="w-24 h-1 bg-white mx-auto rounded-full mb-6"></div>
+
+          <div className="w-24 h-1 bg-white mx-auto rounded-full mb-6" />
+
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
             Projects I worked on in my free time during my 6-month internship.
           </p>
@@ -62,82 +64,87 @@ export default function ProjectSection() {
             >
               <Card
                 className="
-          group
-          bg-gray-900/80
-          border-gray-700/50
-          hover:border-white/20
-          transition-all
-          duration-500
-          hover:-translate-y-2
-          hover:shadow-2xl
-          hover:shadow-white/10
-        "
+                  group
+                  flex
+                  flex-col
+                  h-full
+                  bg-gray-900/80
+                  border-gray-700/50
+                  hover:border-white/20
+                  transition-all
+                  duration-500
+                  hover:-translate-y-2
+                  hover:shadow-2xl
+                  hover:shadow-white/10
+                "
               >
                 <CardHeader className="p-0">
-                  <div className="relative overflow-hidden rounded-t-lg">
+                  <div className="relative aspect-[3/2] overflow-hidden rounded-t-lg">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
 
                     <Image
                       src={project.image}
                       alt={project.title}
-                      width={300}
-                      height={200}
+                      fill
+                      sizes="(max-width: 768px) 100vw,
+                             (max-width: 1024px) 50vw,
+                             33vw"
                       className="
-                w-full
-                h-48
-                object-cover
-                transition-transform
-                duration-700
-                group-hover:scale-105
-              "
+                        object-cover
+                        transition-transform
+                        duration-700
+                        group-hover:scale-105
+                      "
                     />
                   </div>
                 </CardHeader>
 
-                <CardContent className="p-6">
+                <CardContent className="flex flex-col flex-1 p-6">
                   <CardTitle className="mb-3 text-white group-hover:text-gray-300 transition-all duration-300">
                     {project.title}
                   </CardTitle>
 
-                  <CardDescription className="mb-4 text-gray-300">
+                  <CardDescription className="mb-4 text-gray-300 min-h-[72px]">
                     {project.description}
                   </CardDescription>
 
                   <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech, techIndex) => (
+                    {project.technologies.map((tech) => (
                       <Badge
-                        key={techIndex}
+                        key={tech}
                         variant="outline"
                         className="
-                  text-xs
-                  border-white/10
-                  text-gray-300
-                  hover:border-white/20
-                  hover:bg-white/5
-                  transition-all
-                "
+                          text-xs
+                          border-white/10
+                          text-gray-300
+                          hover:border-white/20
+                          hover:bg-white/5
+                          transition-all
+                        "
                       >
                         {tech}
                       </Badge>
                     ))}
                   </div>
 
-                  <Button
-                    size="sm"
-                    asChild
-                    className="
-              bg-white
-              text-black
-              hover:bg-gray-200
-              shadow-lg
-              shadow-white/10
-            "
-                  >
-                    <Link href={project.live} target="_blank">
-                      <ExternalLink className="mr-2 h-3 w-3" />
-                      Live Demo
-                    </Link>
-                  </Button>
+                  <div className="mt-auto">
+                    <Button
+                      size="sm"
+                      asChild
+                      className="
+                        bg-white
+                        text-black
+                        hover:bg-gray-200
+                        shadow-lg
+                        shadow-white/10
+                      "
+                    >
+                      <Link href={project.live} target="_blank">
+                        <ExternalLink className="mr-2 h-3 w-3" />
+                        Live Demo
+                      </Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </AnimationWrapper>
