@@ -4,32 +4,9 @@ import AnimationWrapper from "../animation-wrapper";
 
 const workExperience = [
   {
-    company: "Titan Stone Life Insurance Plc.",
-    position: "IT Application & BA",
-    duration: "2026 - Current",
-    location: "Phnom Penh",
-    type: "Full-time",
-    description: [
-      "Developed customer-facing platforms, including web and mobile applications.",
-      "Redesigned and rebuilt the company website.",
-      "Analyzed business requirements for insurance systems and digital platforms.",
-      "Collaborated with vendors and internal teams to integrate and improve business systems.",
-    ],
-    technologies: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "NestJS",
-      "Prisma ORM",
-      "PostgreSQL",
-    ],
-    gradient: "from-amber-900/20 to-orange-900/20",
-    iconBg: "from-amber-600 to-orange-600",
-  },
-  {
     company: "LDI.",
     position: "Full Stack Developer",
-    duration: "2025 - 2026",
+    duration: "2025 - Current",
     location: "Phnom Penh",
     type: "Full-time",
     description: [
