@@ -10,8 +10,8 @@ const workExperience = [
     location: "Phnom Penh",
     type: "Full-time",
     description: [
-      "Develop and maintain ERP and CRM systems, handling both frontend and backend development.",
-      "Actively learning and improving DevOps skills to better support deployment and infrastructure management.",
+      "Develop and maintain end-to-end web applications from frontend to backend.",
+      "Handle deployment, Docker, CI/CD pipelines, and multiple development, staging, and production environments.",
     ],
     technologies: [
       "TypeScript",
